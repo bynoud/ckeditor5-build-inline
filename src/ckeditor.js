@@ -34,6 +34,9 @@ import Strikethrough from '@ckeditor/ckeditor5-basic-styles/src/strikethrough';
 import Code from '@ckeditor/ckeditor5-basic-styles/src/code';
 import Highlight from '@ckeditor/ckeditor5-highlight/src/highlight';
 
+// for placeholder
+import Emptyness from 'ckeditor5-emptyness/src/emptyness';
+
 export default class InlineEditor extends InlineEditorBase {}
 
 // Plugins to include in the build.
@@ -64,6 +67,7 @@ InlineEditor.builtinPlugins = [
 	Underline,
 	Strikethrough,
 	Code,
+  Emptyness,
 ];
 
 // Editor configuration.
